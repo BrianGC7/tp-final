@@ -1,0 +1,91 @@
+.footer{
+    &__second{
+        border: 1px solid green;
+        background-color: #000000;
+        color: #ffffff;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+        font-size: 14px;
+        @media (min-width: 1115px){
+            justify-content: space-between;
+            height: 115px;
+        }
+    }
+    &__items{
+        list-style: none;
+        line-height: 28px;
+
+    }
+    &__links{
+        text-decoration: none;
+        color:#ffffff;
+    }
+    &__option{
+        //border: 1px solid yellow;
+        color: #ffffff;
+        width: 190px;
+        text-align: center;
+        padding-top: 12px;
+        @media(min-width: 1115px){
+            width: 200px;
+            height: 100%;
+            padding-top: 2px;
+        }
+    }
+    &__descrip{
+        //border: 1px solid rgb(255, 255, 255);
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        width: 215px;
+        height: 116px;
+        padding-top: 8px;
+        margin-left: 11px;
+        @media(min-width: 1115px){
+            width: 180px;
+            height: 100%;
+            margin-left: 0px;
+        }
+    }
+    &__redes{
+        //border: 1px solid red;
+        width: 240px;
+        @media(min-width: 1115px){
+            width: 900px;
+            height: 100%;
+            display: flex;
+            justify-content: space-between;
+            flex-direction: row-reverse;
+        }
+        &-items{
+            list-style: none;
+            display: flex;
+            justify-content: space-around;
+            //border: 1px solid blue;
+        
+            align-items: center;
+            height: 44px;
+            padding-top: 3px;
+            @media(min-width:1115px){
+                width: 400px;
+                height: 100%;
+            }
+        }
+    }
+    &__first{
+        height: 40px;
+        background-color: #000000;
+        color: #ffffff;
+        font-size: 14px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        @media (min-width: 1115px){
+            font-size: 18px;
+            height: 50px;
+        }
+    }
+    
+}

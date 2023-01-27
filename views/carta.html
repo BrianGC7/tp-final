@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/toastify-js/src/toastify.min.css">
+    <link rel="stylesheet" href="../css/styles.css">
+</head>
+<body>
+    <main class="main-container" >
+        <header class="header">
+            <div class="header__navigation">
+              <img class="header__menu" src="../img/icon-menu.svg" alt=""><!-- Acá va el icono del menú-->
+              <a href="../index.html"><img class="header__logo" src="../img/logo.svg" alt=""></a> <!-- Acá icono charmy-->
+            
+              <div class="navbar">
+                <ul class="navbar__items">
+                  <li><a class="navbar__link" href="../index.html">Inicio</a></li>
+                  <li><a class="navbar__link" href="./carta.html">MENÚ</a></li>
+                  <li><a class="navbar__link" href="./nosotros.html">Nosotros</a></li>
+                  <li><a class="navbar__link" href="./contacto.html">Contacto</a></li>
+                  <li><a class="navbar__link" href="./nosotros.html">Solidaridad</a></li
+                </ul>
+              </div>
+            </div>
+      
+            <!--SEARCH-->
+           
+        
+                <!-- inicio navbar modal -->
+            <div class="modalNavbar__background"> <!-- parte oscura cuando el menú se desliza.-->          
+              <nav class="modalNavbar">
+                <img class="modalNavbar__close-icon" src="../img/icon-close.svg" alt=""> <!--Acá icono de cierre-->
+                <ul class="modalNavbar__items">
+                  <li><a class="modalNavbar__link" href="../index.html">Inicio</a></li>
+                  <li><a class="modalNavbar__link" href="./carta.html">MENÚ</a></li>
+                  <li><a class="modalNavbar__link" href="./nosotros.html">Nosotros</a></li>
+                  <li><a class="modalNavbar__link" href="./contacto.html">Contacto</a></li>
+                  <li><a class="modalNavbar__link" href="./nosotros.html">Solidaridad</a></li>
+                </ul>
+              </nav>
+            </div>
+                <!-- final navbar modal --> <!--esto se va a mostrar siempre sea en movil y compu-->
+              
+            <div class="header__navbar">
+              <!-- <a href=""><img class="header__avatar" src="../img/interrogation.svg" alt=""></a> -->
+              <div class="header__cart" id="readCart">
+                <div class="header__cart--notification">0</div>
+                <img  src="../img/icon-cart-white.svg" alt="">
+              </div> <!-- icon cart-->
+            </div>  
+          </header>
+
+          <section class="cards"><!--CARDS-->
+            <h2 class="cards__titleFirst">Nuestro menú</h2>
+            <nav class="cards__main">
+              <ul class="cards__item">
+                <li class="cards__link">
+                  <button id="all" class="cards__mainButton">Todos los productos</button>
+                </li>
+                <li class="cards__link">
+                  <button id="women's clothing" class="cards__mainButton">Ropa Mujer</button>
+                </li>
+                <li class="cards__link">
+                  <button id="men's clothing" class="cards__mainButton">Ropa Hombre</button>
+                </li>
+                <li class="cards__link">
+                  <button id="electronics" class="cards__mainButton">Electrónica</button>
+                </li>
+                <li class="cards__link">
+                  <button id="jewelery" class="cards__mainButton">Joyas</button>
+                </li>
+              </ul>
+            </nav>
+            <div class="cards__container" id="product"></div>
+          </section>
+
+          <!--CART-->
+          <section class="cart">
+            <div class="cart__container" id="cart">
+            </div>
+           
+            
+
+          </section>
+          <footer class="footer__second">
+            <div class="footer__redes">
+              <ul class="footer__redes-items">
+                <li><a class="footer__links" href="https://www.facebook.com/"><img src="../img/faceFooter.png" alt=""></a></li>
+                <li><a class="footer__links" href="https://www.instagram.com/"><img src="../img/instagramFooter.png" alt=""></a></li>
+                <li><a class="footer__links" href="https://twitter.com/?lang=es"><img src="../img/twitterFooter.png" alt=""></a></li>
+                <li><a class="footer__links" href="https://www.tiktok.com/es/"><img src="../img/tiktokFooter.png" alt=""></a></li>
+              </ul>
+              <div class="footer__descrip">
+                <p>© CHARMY 2022</p>
+                <p>+54  911 2345 6789</p>
+                <p>info@charmy.com</p>
+                <p><a class="footer__links" href="../views/contacto.html">Contactanos</a></p>
+              </div>
+            </div>  
+            <div class="footer__option">
+              <ul class="footer__items">
+                <li><a class="footer__links" href="../views/nosotros.html">Quienes somos</a></li>
+                <li><a class="footer__links" href="">Preguntas frecuentes</a></li>
+                <li><a class="footer__links" href="../views/nosotros.html">Huellitas para contar</a></li>
+                <li><a class="footer__links" href="">Términos y condiciones</a></li>
+              </ul>
+            </div>
+          </footer>
+        </main>
+    
+
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/toastify-js"></script>
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>    
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script src="../js/fetch.js"></script>
+    <script src="../js/script.js"></script>
+    <script src="../js/cart.js"></script>
+    <script src="../js/main.js"></script>
+</body>
+</html>

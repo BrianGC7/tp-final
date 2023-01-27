@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"/>
+  <link rel="stylesheet" href="./css/styles.css">
+  
+</head>
+<body>
+  <main id="inicio" class="main-container">
+    <header class="header">
+      <div class="header__navigation">
+        <img class="header__menu" src="./img/icon-menu.svg" alt=""><!-- Acá va el icono del menú-->
+        <a href="index.html"><img class="header__logo" src="./img/logo.svg" alt=""></a> <!-- Acá icono charmy-->
+      
+        <div class="navbar">
+          <ul class="navbar__items">
+            <li><a class="navbar__link" href="index.html">Inicio</a></li>
+            <li><a class="navbar__link" href="./views/carta.html">MENÚ</a></li>
+            <li><a class="navbar__link" href="./views/nosotros.html">Nosotros</a></li>
+            <li><a class="navbar__link" href="./views/contacto.html">Contacto</a></li>
+            <li><a class="navbar__link" href="./views/nosotros.html">Solidaridad</a></li
+          </ul>
+        </div>
+      </div>
+
+      <!--SEARCH-->
+     
+  
+          <!-- inicio navbar modal -->
+      <div class="modalNavbar__background"> <!-- parte oscura cuando el menú se desliza.-->          
+        <nav class="modalNavbar">
+          <img class="modalNavbar__close-icon" src="./img/icon-close.svg" alt=""> <!--Acá icono de cierre-->
+          <ul class="modalNavbar__items">
+            <li><a class="modalNavbar__link" href="index.html">Inicio</a></li>
+            <li><a class="modalNavbar__link" href="./views/carta.html">MENÚ</a></li>
+            <li><a class="modalNavbar__link" href="./views/nosotros.html">Nosotros</a></li>
+            <li><a class="modalNavbar__link" href="./views/contacto.html">Contacto</a></li>
+            <li><a class="modalNavbar__link" href="./views/nosotros.html">Solidaridad</a></li>
+          </ul>
+        </nav>
+      </div>
+          <!-- final navbar modal --> <!--esto se va a mostrar siempre sea en movil y compu-->
+        
+      <div class="header__navbar">
+        <!-- <a href=""><img class="header__avatar" src="./img/interrogation.svg" alt=""></a> -->
+        <div class="header__cart" id="readCart">
+          <div class="header__cart--notification">0</div>
+          <img  src="./img/icon-cart-white.svg" alt="">
+        </div> <!-- icon cart-->
+      </div>  
+    </header>
+    <section class="section">
+      <article>
+        <div class="redes__content" >
+          <img class="redes__img" src="./img/imfH(2).png" alt="">
+          <div class="redes">
+          <!--2 LOGOS POR IZQUIERDA-->
+            <div class="redes__left">
+              <a href="https://www.facebook.com/"><img  class="redes__links" src="./img/facebook.png" alt=""></a> 
+              <a href="https://www.instagram.com/"><img class="redes__links" src="./img/instagram.png" alt=""></a>
+            </div>
+          <!--2 LOGOS POR DERECHA-->
+            <div class="redes__rigth">
+              <a href="https://twitter.com/?lang=es"><img class="redes__links" src="./img/twitter.png" alt=""></a>
+              <a href="https://www.tiktok.com/es/"><img class="redes__links" src="./img/tiktok.png" alt=""></a>    
+            </div>
+          </div>  
+        </div>
+      </article>
+      <article class="swiper__container">
+        <div class="swiper">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide">
+              <img class="swiper-img" src="./img/prueba.jpg" alt="">
+            </div>
+            <div class="swiper-slide">
+              <img class="swiper-img" src="./img/prueba.jpg" alt="">
+            </div>
+            <div class="swiper-slide">
+              <img class="swiper-img" src="./img/prueba.jpg" alt="">
+            </div>
+          </div>
+          <div class="swiper-pagination"></div>
+          <div class="swiper-button-prev"></div>
+          <div class="swiper-button-next"></div>
+        </div>
+      </article>
+    <!--FIN CARRUSEL-->
+  </section>
+  <!--CART-->
+  <section class="cart">
+    <div class="cart__container" id="cart">
+    </div>
+   
+  </section>
+  <footer class="footer__first">
+    <p>© CHARMY 2023 - Todos los derechos reservados.</p>
+
+
+  </footer>
+  </main>
+   
+  <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+  <script src="./js/carrusel.js"></script>
+  <script src="./js/script.js"></script>
+  <script src="./js/cart.js"></script>
+  <script src="./js/main.js"></script>     
+</body>
+</html>
