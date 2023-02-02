@@ -1,6 +1,3 @@
-
-
-
 //dibujo de carrito.
 const drawCart = () =>{
     modalCarts.innerHTML = "";
@@ -57,7 +54,6 @@ const drawCart = () =>{
         </div>
         
         `;
-        
         document.getElementById("cart").append(totalSection);
         const clearButton = document.querySelector(".cart__footer-clear");
         clearButton.addEventListener("click", clearCart);
@@ -66,7 +62,10 @@ const drawCart = () =>{
 };
 
 // //variable para ver el carrito
-readCart.addEventListener("click", drawCart);
+readCart.addEventListener("click", () =>{
+    modalCarts.style.display = "block";
+    drawCart();
+});
 
 //función para borrar productos del carrito.
 const deleteCart = () =>{

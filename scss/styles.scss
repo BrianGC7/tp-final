@@ -21,10 +21,17 @@ body{
 }
 .main-container{
     width: 360px;
-    border: 1px solid red;
+    background-color:rgba(236, 236, 210, 0.6);
     margin: auto;
     position: relative;
-    @media (min-width: 1115px){
+    @media (min-width: 1024px){
         width: 100%;
     }
+}
+
+.dark{
+    background-color: #121212;
+}
+.active{
+    color:rgba(236, 236, 210, 0.9);
 }

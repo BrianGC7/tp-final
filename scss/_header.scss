@@ -1,15 +1,18 @@
 @import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@400;700&display=swap');
 .header{
     font-family: 'Ubuntu', sans-serif;
-    background-color: #020202;
+    background-color: #121212;
     display: flex;
     align-items: center;
     justify-content: space-between;
-    height: 74px;
+    height: 76px;
     padding: 0 8px;
-    // background-color: rgb(173, 49, 49);
-    @media (min-width: 1115px){
-        height: 85px;
+    //position: fixed;
+    //z-index: 1;
+    //width: 100%;
+    //top: 0px;
+    @media (min-width: 1024px){
+        height: 76px;
     }
     &__navigation{
         width: 150px;
@@ -17,7 +20,7 @@
         display: flex;
         align-items: center;
         justify-content: space-between;
-        @media (min-width:1115px){
+        @media (min-width:1024px){
             width: 800px;
         }
     }
@@ -25,39 +28,53 @@
         &:hover{
             cursor: pointer;
         }
-        @media(min-width: 1115px){
+        @media(min-width: 1024px){
             display: none;
         }
     }
     &__navbar{
         display: flex;
         align-items: center;
+        margin-right: 4px;
         justify-content: space-between;
-        width: 70px;
-        height: 36px;
-        @media(min-width: 1115px){
+        width: 90px;
+        height: 46px;
+        @media(min-width: 1024x){
             width: 120px;
             height: 70px;
         }
     }
-    &__avatar{
-        @media(min-width: 1115px){
-            width: 35px;
-            height: 35px;
+    &__mode{
+        width: 34px;
+        &-img{
+            margin: 4px 4px;
+            width: 24px;
+            height: 20px;
+        @media(min-width: 1024px){
+            width: 24px;
+            height: 20px;
         }
+        }
+        &-info{
+            margin-top: -7px;
+            color: rgb(255, 255, 255);
+            text-align: center;
+            font-size: 12px;
+        }    
         &:hover{
             cursor: pointer;
-            border: 1px solid rgb(0, 0, 0);
-            border-radius: 50%;
+            opacity: 0.5;
         }
     }
     &__cart{
         position: relative;
-        @media(min-width: 1115px){
+        font-weight: bold;
+        @media(min-width: 1024px){
         
         }
         &:hover{
             cursor: pointer;
+            opacity: 0.5;
         }
         &--notification{
             display: none;
@@ -76,15 +93,12 @@
     }
     &__logo{
         width: 120px;
-        height: 85px;
-        padding-top: 10px;
-        margin-right: 20px;
-        
-        @media(min-width: 1115px){
-            margin-top: 10px;
+        height: 78px;
+        padding-top: 6px;
+        @media(min-width: 1024px){
             width: 150px;
-            height: 120px;
-            
+            height: 80px;
+            margin-left: 8px;    
         }
     }
 }
@@ -93,53 +107,43 @@
 
 .navbar{
    display: none;
-   width: 102px;
-   height: 30px; 
-   @media(min-width: 1115px){
-    display: flex;
-    align-items: center;
-    width: 550px;
-    height: 50px;
-    margin-right: 50px;
-   }
+   @media(min-width: 1024px){
+    display: block;
+    width: 600px;
+    line-height: 70px;
+    margin-left: 50px;
+    }
+    ul li .active{
+        color: rgb(255, 255, 255);
+        display: inline-block;
+        border-bottom: 3px solid rgb(255, 255, 255);
+        width: 100%;
+        border-radius: 1px;
+        transition: 0.5s ease;
+    }
     &__items{
         display: flex;
         align-items: center;
         list-style: none;
         justify-content: space-between;
-        @media(min-width: 1115px){
-            height: 32px;
-            width: 100px;
-            margin-left: 10px;
-            
-
-        }
     }
     &__link{
         text-decoration: none;
-        color: #ffffff;
+        //border: 1px solid white;
+        color: rgba(158, 158, 158, 0.5);
         font-weight: 600;
         &:hover{
             cursor: pointer;
-            border-radius: 10px;
-            border: 1px solid rgb(255, 255, 255);
-            background-color: rgb(104, 0, 0);
             opacity: 0.5;
-        }
-        @media(min-width: 1115px){
-            margin: 0 25px;
-        
+            color: rgb(255, 255, 255);
         }
     }
-
-
 }
 
-.modalNavbar{
-    
-    background-color: #ffffff;
+.modalNavbar{  
+    background-color: #121212;
     width: 230px;
-    padding: 20px 24px;
+    //padding: 20px 20px;
     height: 100%;
     &__background{ 
         display: none;
@@ -157,20 +161,34 @@
     &__items{
         display: flex;
         flex-direction: column;
-        height: 200px;
-        justify-content: space-between;
         list-style: none;
-        margin-top: 50px;
+        margin-top: 40px;
     }
     &__link{
+        display: flex;
+        padding-left: 20px;
+        height: 50px;
+        width: 210px;
+        align-items: center;
         text-decoration: none;
-        color: rgb(16, 0, 46);
+        color: #ffffff;
         font-weight: 700;
         font-size: 1.1em;
-
+        &:hover{
+            cursor: pointer;
+            opacity: 0.5;
+            border-radius: 0 50px 50px 0;
+            background-color: rgba(158, 158, 158, 0.5);
+            color: #ffffff;
+        }
     }
-    &__close-icon:hover{
-        cursor: pointer;
+    &__close-icon{
+        width: 22px;
+        height: 22px;
+        margin: 24px 20px;
+        &:hover{
+            cursor: pointer;
+        }
     }
 }
 

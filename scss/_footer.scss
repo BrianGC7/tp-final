@@ -1,58 +1,61 @@
 .footer{
     &__second{
-        border: 1px solid green;
-        background-color: #000000;
-        color: #ffffff;
+        background-color: #121212;
+        color: rgba(236, 236, 210, 0.9);
         display: flex;
         flex-wrap: wrap;
         justify-content: center;
         align-items: center;
         font-size: 14px;
-        @media (min-width: 1115px){
+        @media (min-width: 1024px){
             justify-content: space-between;
             height: 115px;
         }
     }
     &__items{
+        height: 84px;
         list-style: none;
-        line-height: 28px;
-
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+        @media (min-width: 1024px){
+            width: 180px;
+            height: 100%;
+        }
     }
     &__links{
         text-decoration: none;
-        color:#ffffff;
+        color:rgba(236, 236, 210, 0.9);
     }
     &__option{
-        //border: 1px solid yellow;
-        color: #ffffff;
+        color: rgba(236, 236, 210, 0.9);
         width: 190px;
         text-align: center;
         padding-top: 12px;
-        @media(min-width: 1115px){
+        @media(min-width: 1024px){
             width: 200px;
             height: 100%;
             padding-top: 2px;
         }
     }
     &__descrip{
-        //border: 1px solid rgb(255, 255, 255);
         display: flex;
         justify-content: center;
+        align-items: center;
         flex-wrap: wrap;
-        width: 215px;
-        height: 116px;
-        padding-top: 8px;
-        margin-left: 11px;
-        @media(min-width: 1115px){
+        width: 190px;
+        height: 84px;
+        margin: 16px 24px;
+        @media(min-width: 1024px){
             width: 180px;
             height: 100%;
-            margin-left: 0px;
+            margin: 0 18px;
         }
     }
     &__redes{
-        //border: 1px solid red;
         width: 240px;
-        @media(min-width: 1115px){
+        @media(min-width: 1024px){
             width: 900px;
             height: 100%;
             display: flex;
@@ -63,29 +66,33 @@
             list-style: none;
             display: flex;
             justify-content: space-around;
-            //border: 1px solid blue;
-        
             align-items: center;
             height: 44px;
             padding-top: 3px;
-            @media(min-width:1115px){
+            @media(min-width:1024px){
                 width: 400px;
                 height: 100%;
             }
         }
     }
     &__first{
+        position: relative;
         height: 40px;
-        background-color: #000000;
-        color: #ffffff;
+        background-color: #121212;
+        color: rgba(236, 236, 210, 0.9);
         font-size: 14px;
         display: flex;
         justify-content: center;
         align-items: center;
-        @media (min-width: 1115px){
+        @media (min-width: 1024px){
             font-size: 18px;
             height: 50px;
         }
+    }
+    &__line{
+        color:rgba(231, 231, 231, 0.1);
+        size: 0.1px;
+
     }
     
 }

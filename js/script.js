@@ -5,15 +5,8 @@ const buttonsCategory = document.querySelectorAll(".cards__mainButton")
 let buttonsAdd = document.querySelectorAll(".cards__description__button");
 const countCart = document.querySelector(".header__cart--notification");
 
-
-
-
-
-
-
 //array of cart.
 let cart = [];
-
 
 //FUNCTIONS TO CART
 //Paint a cards to DOM.
@@ -39,7 +32,6 @@ const drawCards = (products) => {
 
     buttonAct();
 }
-
 
 //Filtros produtos.
 buttonsCategory.forEach(boton =>{
@@ -105,22 +97,24 @@ function addToCart(e){
 //contador del carrito
 function actCount(){
     let number = cart.reduce((acc,prod) => acc + prod.cantidad,0);
+    console.log(number);
     countCart.innerText = number;
 }
 
 
-
+//Local storage.
 //función para poder agregarlo al localStorage       
 const lS = () =>{
     localStorage.setItem("cart", JSON.stringify(cart));
 }
 
+
 //función para que muestre el localStorage
 const dataOfLS = (key) =>{
     return JSON.parse(localStorage.getItem(key));
 }
-const cartupdated = dataOfLS("cart") || [];
-cart = cartupdated;
+const cartUpdated = dataOfLS("cart") || [];
+cart = cartUpdated;
 
 
 
