@@ -6,7 +6,7 @@ const drawCart = () =>{
     cartHeader.className = "cart__header";
     cartHeader.innerHTML = `
         <h1 class="cart__title">Tú compra</h1>
-        <img class="cart__icon-close"  src="../img/icon-close.svg" alt=""> 
+        <img class="cart__icon-close"  src="./img/icon-close.svg" alt=""> 
     `;
     document.getElementById("cart").append(cartHeader);
     const closeButton = document.querySelector('.cart__icon-close');
@@ -32,7 +32,7 @@ const drawCart = () =>{
                     <p>$${prod.price * prod.cantidad}</p>
                 </div>
                 <div class="cart__body__cont-icon">
-                    <img class="cart__icon-delete" src="../img/icon-delete.svg" alt="Eliminar">
+                    <img class="cart__icon-delete" src="./img/icon-delete.svg" alt="Eliminar">
                 </div>
             </div>
             `;

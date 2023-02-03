@@ -23,7 +23,7 @@ const drawCards = (products) => {
                 <p class="cards__description__price-discount">$${prod.price}</p>
             </div>
             <button class="cards__description__button" id= ${prod.id}>
-                <img class="cards__description__button-icon" src="../img/icon-cart-white.svg" alt="icon">Añadir al carrito
+                <img class="cards__description__button-icon" src="./img/icon-cart-white.svg" alt="icon">Añadir al carrito
             </button>
         </div>
         `

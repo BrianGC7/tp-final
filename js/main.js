@@ -25,29 +25,27 @@ btnMode.addEventListener('click', () => {
         infoMode.innerHTML = `<p class=".header__mode-info">Dark</p>`;
         main.classList.add('dark');
         main.classList.add('active');
+        localStorage.setItem("darkMode", 'true'); //valor 1
     }else{
         infoMode.innerHTML = `<p class=".header__mode-info">Ligth</p>`;
         main.classList.remove('dark');
-        main.classList.remove('active');     
+        main.classList.remove('active');
+        localStorage.setItem("darkMode", 'false'); //valor 2     
     };
-    modeLS();
 });
 
-
-
-//Local storage.
-//función para poder agregarlo al localStorage       
-const modeLS = () =>{
-    if(main.classList.contains('dark')){
-        localStorage.setItem("darkMode", 'true');
-    }else{
-        localStorage.setItem("darkMode", 'false');
-    };  
-};
-
+//Local storage.  
 //función para que muestre el localStorage
-const dataOfmodeLS = (key) =>{
-    
+const dataOfmodeLS = () =>{
+    if(localStorage.getItem('darkMode') === 'true'){
+        infoMode.innerHTML = `<p class=".header__mode-info">Dark</p>`;
+        main.classList.add('dark');
+        main.classList.add('active');
+    }else{
+        infoMode.innerHTML = `<p class=".header__mode-info">Ligth</p>`;
+        main.classList.remove('dark');
+        main.classList.remove('active'); 
+    }
 };
-const def = dataOfLS("darkMode");
+dataOfmodeLS();
 
